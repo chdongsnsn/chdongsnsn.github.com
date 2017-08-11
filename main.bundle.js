@@ -1102,7 +1102,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/index/goods/goods.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"goods-wrap\">\n  <div class=\"goods-menu\">\n    <ul class=\"goods-menu-list\">\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\"><img src=\"/assets/img/hot.png\" height=\"12\"> 本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n        <span class=\"menu-num\">23</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item active\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n    </ul>\n  </div>\n  <div class=\"food-list-wrap\">\n    <div>\n      <dl class=\"food-list\">\n        <dt class=\"list-title\">本店招牌菜</dt>\n        <dd class=\"food-item\" *ngFor=\"let card of spus;let i = index\" [class.sell-out]=\"i==1\">\n          <div class=\"food-item-thum\">\n            <a href=\"\">\n              <img src=\"/assets/img/food_item_pic.jpg\" width=\"100\">\n              <span class=\"remainder\">还剩3份</span>\n              <span class=\"pic-tag hot-tag\" *ngIf=\"i == 0\">招牌</span>\n              <span class=\"pic-tag new-tag\" *ngIf=\"i == 2\">新品</span>\n            </a>\n          </div>\n          <div class=\"food-item-content\">\n            <h3 class=\"food-item-name\">皮蛋瘦肉粥</h3>\n            <p class=\"food-desc\" *ngIf=\"i==1\">黄焖鸡米饭+小瓶可乐</p>\n            <div class=\"discount-info\">\n              <div class=\"activity-box\">\n                <span class=\"activity-tag discount-tag\">惠</span>\n                <span class=\"activity-tag limited-tag\">限时</span>\n              </div>\n              <p class=\"discount-text\"><span class=\"discount-num\">8.5折</span><span class=\"discount-limit\">每单仅限1份</span></p>\n            </div>\n            <p class=\"item-price\"><span>¥</span>33\n              <del>¥39</del>\n            </p>\n            <app-index-count-tool [(card)]=\"spus[i]\" [hidden]=\"i==1\"></app-index-count-tool>\n            <!--<app-choose-spec></app-choose-spec>-->\n          </div>\n        </dd>\n      </dl>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"goods-wrap\">\n  <div class=\"goods-menu\">\n    <ul class=\"goods-menu-list\">\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\"><img src=\"/assets/img/hot.png\" height=\"12\"> 本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n        <span class=\"menu-num\">23</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item active\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n      <li class=\"goods-menu-item\">\n        <span class=\"menu-item-text\">本店招牌菜</span>\n      </li>\n    </ul>\n  </div>\n  <div class=\"food-list-wrap\">\n    <div>\n      <dl class=\"food-list\">\n        <dt class=\"list-title\">本店招牌菜</dt>\n        <dd class=\"food-item\" *ngFor=\"let card of spus;let i = index\" [class.sell-out]=\"i==1\">\n          <div class=\"food-item-thum\">\n            <a (click)=\"goDetail()\" >\n              <img src=\"/assets/img/food_item_pic.jpg\" width=\"100\">\n              <span class=\"remainder\">还剩3份</span>\n              <span class=\"pic-tag hot-tag\" *ngIf=\"i == 0\">招牌</span>\n              <span class=\"pic-tag new-tag\" *ngIf=\"i == 2\">新品</span>\n            </a>\n          </div>\n          <div class=\"food-item-content\">\n            <h3 class=\"food-item-name\">皮蛋瘦肉粥</h3>\n            <p class=\"food-desc\" *ngIf=\"i==1\">黄焖鸡米饭+小瓶可乐</p>\n            <div class=\"discount-info\">\n              <div class=\"activity-box\">\n                <span class=\"activity-tag discount-tag\">惠</span>\n                <span class=\"activity-tag limited-tag\">限时</span>\n              </div>\n              <p class=\"discount-text\"><span class=\"discount-num\">8.5折</span><span class=\"discount-limit\">每单仅限1份</span></p>\n            </div>\n            <p class=\"item-price\"><span>¥</span>33\n              <del>¥39</del>\n            </p>\n            <app-index-count-tool [(card)]=\"spus[i]\" [hidden]=\"i==1\"></app-index-count-tool>\n            <!--<app-choose-spec></app-choose-spec>-->\n          </div>\n        </dd>\n      </dl>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1111,6 +1111,7 @@ module.exports = "<div class=\"goods-wrap\">\n  <div class=\"goods-menu\">\n    
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GoodsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1122,10 +1123,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var GoodsComponent = (function () {
-    function GoodsComponent() {
+    function GoodsComponent(router) {
+        this.router = router;
     }
     GoodsComponent.prototype.ngOnInit = function () {
+    };
+    GoodsComponent.prototype.goDetail = function () {
+        this.router.navigateByUrl('/food-detail');
     };
     return GoodsComponent;
 }());
@@ -1139,9 +1145,10 @@ GoodsComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/index/goods/goods.component.html"),
         styles: [__webpack_require__("../../../../../src/app/index/goods/goods.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
 ], GoodsComponent);
 
+var _a;
 //# sourceMappingURL=goods.component.js.map
 
 /***/ }),
